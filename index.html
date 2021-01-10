@@ -1,129 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/animate.css">
-    <title>andrewpatasik.net | developer</title>
+    <script src="https://kit.fontawesome.com/66c5b2aca7.js" crossorigin="anonymous"></script>
+    <title>andrewpatasik | developer</title>
 </head>
+
 <body>
-    <!-- <div id="navbar">
-        <ul id="navbar-el">
-            <li><span id="n-left">//ANDREW PATASIK</span></li>
-            <li id="n-right" onclick="show()">@andrewpatasik
-                <ul class="dropdown">
-                    <li><a href="https://www.linkedin.com/in/andrewpatasik/" class="animated fadeIn"><img src="images/linkedin.png" alt="LinkedIn"></a></li>
-                    <li><a href="https://github.com/andrewpatasik" class="animated fadeIn"><img src="images/github.png" alt="Github"></a></li>
-                    <li><a href="#" class="animated fadeIn"><img src="images/dribbble.png" alt="Dribbble"></a></li>
-                    <li><a href="https://twitter.com/andrewpatasik" class="animated fadeIn"><img src="images/twitter.png" alt="Twitter"></a></li>
-                </ul>
-            </li>
-        </ul>
-    </div> -->
-    <!-- end of navbar -->
-    <div id="wrapper">
-        <div id="landing">
-            <div id="landing-title">
-                <h1>Hi I'm Andrew</h1>
-                <h4 class="typewrite" data-period="2000" data-type='[ "Web Designer", "Front-End Developer" ]'>
-                      <span class="wrap"></span>
-                  </h4>
-            </div>
-            <ul>
-                <li><a href="#" class="left">PROJECTS</a></li>
-                <li><a href="#" class="left">RESUME</a></li>
-                <li><a href="#" class="left">CONTACTS</a></li>
-            </ul>    
-        </div>
-        <div id="footer">
+    <div class="gradient-bg"></div>
+    <!-- navigation -->
+    <div class="navigation">
+        <div class="container flex">
+            <h4 class="typewrite" data-period="2000" data-type='["Hello I&#39;m Andrew, Web Designer",
+                    "Hello I&#39;m Andrew, Front-End Developer"]'>
+                <span class="wrap"></span>
+            </h4>
             <div class="line"></div>
-            <p>Andrew Patasik © 2020</p>
+            <nav>
+                <ul>
+                    <li><a id="li_blog" href="#">blog</a></li>
+                    <li><a id="li_project" href="#">projects</a></li>
+                    <li><a id="li_cv" href="#">curriculum vitae</a></li>
+                </ul>
+            </nav>
         </div>
     </div>
-    <!-- end of wrapper -->
+    <!-- Header -->
+    <section class="header">
+        <div class="container flex">
+            <h1>Hello There 👋,</h1>
+            <p>Welcome to my website, but first, let me introduce myself, my name is Andrew Patasik, I’m a Web Designer
+                and Front-End Developer with a B.S Degree in Computer Science.
+                I have prior working experiences related to the IT/ software development field beforehand, such as
+                Database and ERP System Administrator, and a small amount of time as Java Developer Intern.
+                You can check my full working experiences <span><a href="#">here</a></span>.<br><br>
+                This website is intended to showcase my projects in Web Development, as well as to show recruiters my
+                skills as a Web Developer, which if found relevant to the specifications that have been looking for,
+                I would like to sit and have chat with you! <span><a href="#">here's</a></span> the way you can reach me :)<br><br>
+                Anyway, I have feature three projects below complete with a live demo that you can check out.
+                And if you are interested to check out the rest of my projects, just click <span><a href="#">here</a></span>. Thank you for visiting
+                my website, have a good day!</p>
+        </div>
+    </section>
     <script src="js/wow.min.js"></script>
-    <script>
-        //wow js
-        new WOW().init();
-    </script>
-    <script>
-        //
-        var TxtType = function(el, toRotate, period) {
-        this.toRotate = toRotate;
-        this.el = el;
-        this.loopNum = 0;
-        this.period = parseInt(period, 10) || 2000;
-        this.txt = '';
-        this.tick();
-        this.isDeleting = false;
-    };
-
-    TxtType.prototype.tick = function() {
-        var i = this.loopNum % this.toRotate.length;
-        var fullTxt = this.toRotate[i];
-
-        if (this.isDeleting) {
-        this.txt = fullTxt.substring(0, this.txt.length - 1);
-        } else {
-        this.txt = fullTxt.substring(0, this.txt.length + 1);
-        }
-
-        this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
-
-        var that = this;
-        var delta = 200 - Math.random() * 100;
-
-        if (this.isDeleting) { delta /= 2; }
-
-        if (!this.isDeleting && this.txt === fullTxt) {
-        delta = this.period;
-        this.isDeleting = true;
-        } else if (this.isDeleting && this.txt === '') {
-        this.isDeleting = false;
-        this.loopNum++;
-        delta = 500;
-        }
-
-        setTimeout(function() {
-        that.tick();
-        }, delta);
-    };
-
-    window.onload = function() {
-        var elements = document.getElementsByClassName('typewrite');
-        for (var i=0; i<elements.length; i++) {
-            var toRotate = elements[i].getAttribute('data-type');
-            var period = elements[i].getAttribute('data-period');
-            if (toRotate) {
-              new TxtType(elements[i], JSON.parse(toRotate), period);
-            }
-        }
-        // INJECT CSS
-        var css = document.createElement("style");
-        css.type = "text/css";
-        css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
-        document.body.appendChild(css);
-    };
-        //drop down when click
-        function show(){
-            let drop = document.querySelector('.dropdown')
-            drop.classList.toggle('show')
-        }
-        //close dropdown if user click outside
-        window.onclick = function(event){
-            if(!event.target.matches('#n-right')){
-                let dropdowns = document.getElementsByClassName('dropdown');
-                let i;
-                for(i = 0; i < dropdowns.length; i++){
-                    let openDropdown = dropdowns[i]
-                    if(openDropdown.classList.contains('show')){
-                        openDropdown.classList.remove('show')
-                        }
-                    }
-                }
-            }
-            
-    </script>
+    <script src="./js/script.js"></script>
 </body>
+
 </html>
