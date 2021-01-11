@@ -64,9 +64,9 @@ let list1 = document.getElementById('li_blog');
 let list2 = document.getElementById('li_project');
 let list3 = document.getElementById('li_cv');
 let navbar = document.getElementById('navbar');
+let screenWidth = screen.width;
 
-function phoneScreen(){
-    let screenWidth = screen.width;
+function phoneScreen() {
     let ic1 = document.createElement('i');
     ic1.classList.add('fa');
     ic1.classList.add('fa-pencil-square-o');
@@ -87,6 +87,7 @@ function phoneScreen(){
         list2.appendChild(ic2);
         list3.appendChild(ic3);
     }
+    console.log(screenWidth);
 }
 
 window.addEventListener('resize', () => {
