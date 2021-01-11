@@ -65,10 +65,32 @@ let list2 = document.getElementById('li_project');
 let list3 = document.getElementById('li_cv');
 let navbar = document.getElementById('navbar');
 
+function phoneScreen(){
+    let screenWidth = screen.width;
+    let ic1 = document.createElement('i');
+    ic1.classList.add('fa');
+    ic1.classList.add('fa-pencil-square-o');
+    ic1.setAttribute('aria-hidden', 'true');
+    let ic2 = document.createElement('i');
+    ic2.classList.add('fas');
+    ic2.classList.add('fa-code');
+    let ic3 = document.createElement('i');
+    ic3.classList.add('far');
+    ic3.classList.add('fa-id-badge');
+
+    if (screenWidth <= 900) {
+        list1.innerHTML = '';
+        list2.innerHTML = '';
+        list3.innerHTML = '';
+
+        list1.appendChild(ic1);
+        list2.appendChild(ic2);
+        list3.appendChild(ic3);
+    }
+}
 
 window.addEventListener('resize', () => {
     var w = window.outerWidth;
-    var h = window.outerHeight;
     let ic1 = document.createElement('i');
     ic1.classList.add('fa');
     ic1.classList.add('fa-pencil-square-o');
@@ -97,11 +119,7 @@ window.addEventListener('resize', () => {
         list3.textContent = 'curriculum vitae';
     }
 
-    // console.log(h);
 })
-
-
-// if idle, blur
 
 
 // if scroll, focus
@@ -117,3 +135,4 @@ window.addEventListener('scroll', (e) => {
     }, 1000);
 })
 
+phoneScreen();
