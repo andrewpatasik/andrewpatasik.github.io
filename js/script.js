@@ -63,10 +63,12 @@ window.onload = function () {
 let list1 = document.getElementById('li_blog');
 let list2 = document.getElementById('li_project');
 let list3 = document.getElementById('li_cv');
+let navbar = document.getElementById('navbar');
 
 
 window.addEventListener('resize', () => {
     var w = window.outerWidth;
+    var h = window.outerHeight;
     let ic1 = document.createElement('i');
     ic1.classList.add('fa');
     ic1.classList.add('fa-pencil-square-o');
@@ -94,4 +96,24 @@ window.addEventListener('resize', () => {
         list3.removeChild(list3.childNodes[0])
         list3.textContent = 'curriculum vitae';
     }
+
+    // console.log(h);
 })
+
+
+// if idle, blur
+
+
+// if scroll, focus
+let isScrolling;
+window.addEventListener('scroll', (e) => {
+    // focus navbar when scrolling
+    navbar.classList.add('focus');
+    // clear timeout event
+    window.clearTimeout(isScrolling);
+    //timeout event to blur navbar if not scrolling
+    isScrolling = setTimeout(() => {
+        navbar.classList.remove('focus');
+    }, 1000);
+})
+
