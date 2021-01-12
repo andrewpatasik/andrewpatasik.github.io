@@ -64,6 +64,12 @@ let list1 = document.getElementById('li_blog');
 let list2 = document.getElementById('li_project');
 let list3 = document.getElementById('li_cv');
 let navbar = document.getElementById('navbar');
+let frame1 = document.getElementById('frame-1');
+let frame2 = document.getElementById('frame-2');
+let frame3 = document.getElementById('frame-3');
+let frameNav1 = document.getElementById('frame-nav-1');
+let frameNav2 = document.getElementById('frame-nav-2');
+let frameNav3 = document.getElementById('frame-nav-3');
 let screenWidth = screen.width;
 
 function phoneScreen() {
@@ -137,3 +143,42 @@ window.addEventListener('scroll', (e) => {
 })
 
 phoneScreen();
+
+// frame1.addEventListener('mouseover', () => {
+//     frameNav1.classList.add('pop');
+// })
+
+// frameNav1.addEventListener('mouseover', () => {
+//     frameNav1.classList.add('pop');
+// })
+
+// frameNav1.addEventListener('mouseout', () => {
+// frameNav1.classList.remove('pop');
+
+// })
+
+// frame2.addEventListener('mouseover', () => {
+//     frameNav2.classList.add('pop');
+// })
+
+// frameNav2.addEventListener('mouseover', () => {
+//     frameNav2.classList.add('pop');
+// })
+
+// frameNav2.addEventListener('mouseout', () => {
+// frameNav2.classList.remove('pop');
+
+// })
+
+// frame3.addEventListener('mouseover', () => {
+//     frameNav3.classList.add('pop');
+// })
+
+// frameNav3.addEventListener('mouseover', () => {
+//     frameNav3.classList.add('pop');
+// })
+
+// frameNav3.addEventListener('mouseout', () => {
+// frameNav3.classList.remove('pop');
+
+// })

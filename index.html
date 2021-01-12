@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/utilities.css">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/animate.css">
     <script src="https://kit.fontawesome.com/66c5b2aca7.js" crossorigin="anonymous"></script>
@@ -14,7 +15,7 @@
     <div class="gradient-bg"></div>
     <!-- navigation -->
     <div class="navigation">
-        <div class="container flex">
+        <div class="container flex responsive">
             <h4 class="typewrite" data-period="2000" data-type='["Hello I&#39;m Andrew, Web Designer",
                     "Hello I&#39;m Andrew, Front-End Developer"]'>
                 <span class="wrap"></span>
@@ -32,18 +33,62 @@
     <!-- Header -->
     <section class="header">
         <div class="container flex">
-            <h1>Hello There 👋,</h1>
-            <p>Welcome to my website, but first, let me introduce myself, my name is Andrew Patasik, I’m a Web Designer
-                and Front-End Developer with a B.S Degree in Computer Science.
-                I have prior working experiences related to the IT/ software development field beforehand, such as
+            <h1>Hi! my name is Andrew Patasik, I’m a Web Designer
+             / Front-End Developer with a B.S Degree in Computer Science.</h1>
+            <p>I have prior working experiences related to the IT/ software development industry, such as
                 Database and ERP System Administrator, and a small amount of time as Java Developer Intern.
                 You can check my full working experiences <span><a href="#">here</a></span>.<br><br>
                 This website is intended to showcase my projects in Web Development, as well as to show recruiters my
                 skills as a Web Developer, which if found relevant to the specifications that have been looking for,
-                I would like to sit and have chat with you! <span><a href="#">here's</a></span> the way you can reach me :)<br><br>
+                I would like to sit and have chat with you! <span><a href="#">here's</a></span> the way you can reach me.<br><br>
                 Anyway, I have feature three projects below complete with a live demo that you can check out.
                 And if you are interested to check out the rest of my projects, just click <span><a href="#">here</a></span>. Thank you for visiting
                 my website, have a good day!</p>
+        </div>
+    </section>
+    <!-- Projects -->
+    <section class="project">
+        <h2>Feature Projects</h2>
+        <div class="container border grid grid-col-3">
+            <div class="frame grid">
+                <img id="frame-1" src='images/project-1.png' alt=''/>
+                
+                <div id="frame-nav-1" class="frame-nav">
+                    <h3>project 1</h3>
+                    <p>JS | HTML | CSS</p>
+                    <button class="card-button">view code</button>
+                    <button class="card-button">live demo</button>
+                    <div class="frame-background"></div>
+                </div>
+            </div>
+            <div class="frame grid">
+                <img id="frame-2" src='images/project-2.png' alt=''/>
+                <div id="frame-nav-2" class="frame-nav">
+                    <h3>project 2</h3>
+                    <p>JS | HTML | CSS</p>
+                    <button class="card-button">view code</button>
+                    <button class="card-button">live demo</button>
+                    <div class="frame-background"></div>
+                </div>
+            </div>
+            <div class="frame grid">
+                <img id="frame-3" src='images/project-3.png' alt=''/>
+                <div id="frame-nav-3" class="frame-nav">
+                    <h3>project 3</h3>
+                    <p>JS | HTML | CSS</p>
+                    <button class="card-button">view code</button>
+                    <button class="card-button">live demo</button>
+                    <div class="frame-background"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <section class="footer">
+        <div class="container">
+            <div class="footer-content gradient-bg">
+                <p>andrew patasik © 2021</p>
+            </div>
         </div>
     </section>
     <script src="js/wow.min.js"></script>
