@@ -1,2 +1,2 @@
 # andrewpatasik.github.io
-my personal website
+personal website
