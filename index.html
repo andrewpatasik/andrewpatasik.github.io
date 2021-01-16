@@ -15,17 +15,19 @@
     <div class="gradient-bg"></div>
     <!-- navigation -->
     <div class="navigation">
-        <div class="container flex responsive">
+        <div class="container flex">
             <h4 class="typewrite" data-period="2000" data-type='["Hello I&#39;m Andrew, Web Designer",
                     "Hello I&#39;m Andrew, Front-End Developer"]'>
                 <span class="wrap"></span>
             </h4>
-            <div class="line"></div>
+            <!-- <div class="line"></div> -->
             <nav id="navbar">
-                <ul>
+                <i id="dropdown-btn" class="fas fa-bars fa-lg ic-menu"></i>
+                <ul class="dropdown-item">
                     <li><a id="li_blog" href="#">blog</a></li>
                     <li><a id="li_project" href="#">projects</a></li>
                     <li><a id="li_cv" href="#">curriculum vitae</a></li>
+                    <div></div>
                 </ul>
             </nav>
         </div>
@@ -48,7 +50,7 @@
     </section>
     <!-- Projects -->
     <section class="project">
-        <h2>Feature Projects</h2>
+        <h2>Featured Projects</h2>
         <div class="container border grid grid-col-3">
             <div class="frame grid">
                 <img id="frame-1" src='images/project-1.png' alt=''/>

@@ -70,6 +70,8 @@ let frame3 = document.getElementById('frame-3');
 let frameNav1 = document.getElementById('frame-nav-1');
 let frameNav2 = document.getElementById('frame-nav-2');
 let frameNav3 = document.getElementById('frame-nav-3');
+let dropdownBtn = document.getElementById('dropdown-btn');
+// let dropdownItem = document.querySelector('.dropdown-item');
 let screenWidth = screen.width;
 
 function phoneScreen() {
@@ -182,3 +184,9 @@ phoneScreen();
 // frameNav3.classList.remove('pop');
 
 // })
+
+dropdownBtn.addEventListener('click', showDropdown);
+
+function showDropdown(){
+    // dropdownItem.classList.toggle('show');
+}
