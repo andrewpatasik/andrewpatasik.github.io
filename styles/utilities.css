@@ -40,6 +40,17 @@
     border: 1px var(--paragraph2-color);
 }
 
+.op {
+    opacity: 50%;
+}
+
+.center-item {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
 
 /* The typewriter cursor effect */
 /* 

@@ -64,12 +64,12 @@ let list1 = document.getElementById('li_blog');
 let list2 = document.getElementById('li_project');
 let list3 = document.getElementById('li_cv');
 let navbar = document.getElementById('navbar');
-let frame1 = document.getElementById('frame-1');
-let frame2 = document.getElementById('frame-2');
-let frame3 = document.getElementById('frame-3');
-let frameNav1 = document.getElementById('frame-nav-1');
-let frameNav2 = document.getElementById('frame-nav-2');
-let frameNav3 = document.getElementById('frame-nav-3');
+let project1 = document.getElementById('project-1');
+let project2 = document.getElementById('project-2');
+let project3 = document.getElementById('project-3');
+let pItem1 = document.getElementById('p-item-1');
+let pItem2 = document.getElementById('p-item-2');
+let pItem3 = document.getElementById('p-item-3');
 let dropdownBtn = document.getElementById('dropdown-btn');
 // let dropdownItem = document.querySelector('.dropdown-item');
 let screenWidth = screen.width;
@@ -146,45 +146,30 @@ window.addEventListener('resize', () => {
 
 phoneScreen();
 
-frame1.addEventListener('mouseover', () => {
-    frameNav1.classList.add('pop');
-})
+project1.addEventListener('mouseover', () => {
+    pItem1.classList.add('show');
+}, false);
 
-frameNav1.addEventListener('mouseover', () => {
-    frameNav1.classList.add('pop');
-})
+project1.addEventListener('mouseout', () => {
+    pItem1.classList.remove('show');
+}, false);
 
-frameNav1.addEventListener('mouseout', () => {
-frameNav1.classList.remove('pop');
+project2.addEventListener('mouseover', () => {
+    pItem2.classList.add('show');
+}, false);
 
-})
+project2.addEventListener('mouseout', () => {
+    pItem2.classList.remove('show');
 
-frame2.addEventListener('mouseover', () => {
-    frameNav2.classList.add('pop');
-})
+}, false);
 
-frameNav2.addEventListener('mouseover', () => {
-    frameNav2.classList.add('pop');
-})
+project3.addEventListener('mouseover', () => {
+    pItem3.classList.add('show');
+}, false);
 
-frameNav2.addEventListener('mouseout', () => {
-frameNav2.classList.remove('pop');
-
-})
-
-frame3.addEventListener('mouseover', () => {
-    frameNav3.classList.add('pop');
-})
-
-frameNav3.addEventListener('mouseover', () => {
-    frameNav3.classList.add('pop');
-})
-
-frameNav3.addEventListener('mouseout', () => {
-frameNav3.classList.remove('pop');
-
-})
-
+project3.addEventListener('mouseout', () => {
+    pItem3.classList.remove('show');
+}, false);
 // dropdownBtn.addEventListener('click', showDropdown);
 
 // function showDropdown(){
