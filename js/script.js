@@ -59,7 +59,6 @@ window.onload = function () {
     document.body.appendChild(css);
 };
 
-
 let list1 = document.getElementById('li_blog');
 let list2 = document.getElementById('li_project');
 let list3 = document.getElementById('li_cv');
@@ -71,7 +70,7 @@ let pItem1 = document.getElementById('p-item-1');
 let pItem2 = document.getElementById('p-item-2');
 let pItem3 = document.getElementById('p-item-3');
 let dropdownBtn = document.getElementById('dropdown-btn');
-// let dropdownItem = document.querySelector('.dropdown-item');
+let dropdownItem = document.getElementById('dropdown-item');
 let screenWidth = screen.width;
 
 function phoneScreen() {
@@ -111,7 +110,7 @@ window.addEventListener('resize', () => {
     ic3.classList.add('far');
     ic3.classList.add('fa-id-badge');
 
-    if (w <= 900) {
+    if (w <= 900 && w >= 650) {
         list1.innerHTML = '';
         list2.innerHTML = '';
         list3.innerHTML = '';
@@ -119,13 +118,37 @@ window.addEventListener('resize', () => {
         list1.appendChild(ic1);
         list2.appendChild(ic2);
         list3.appendChild(ic3);
-    } else if (w > 900) {
+
+        list2.classList.remove('hid');
+        list1.classList.remove('hid');
+        list3.classList.remove('hid');
+        dropdownItem.getElementsByTagName('DIV')[0].classList.remove('hid');
+    } 
+    if (w <= 650) {
+        list2.classList.add('hid');
+        list1.classList.add('hid');
+        list3.classList.add('hid');
+        dropdownItem.getElementsByTagName('DIV')[0].classList.add('hid');
+
         list1.removeChild(list1.childNodes[0]);
-        list1.textContent = 'blog';
+        list1.textContent = 'home';
         list2.removeChild(list2.childNodes[0])
         list2.textContent = 'projects';
         list3.removeChild(list3.childNodes[0])
         list3.textContent = 'curriculum vitae';
+    } 
+    if (w > 900) {
+        list1.removeChild(list1.childNodes[0]);
+        list1.textContent = 'home';
+        list2.removeChild(list2.childNodes[0])
+        list2.textContent = 'projects';
+        list3.removeChild(list3.childNodes[0])
+        list3.textContent = 'curriculum vitae';
+
+        list2.classList.remove('hid');
+        list1.classList.remove('hid');
+        list3.classList.remove('hid');
+        dropdownItem.getElementsByTagName('DIV')[0].classList.remove('hid');
     }
 
 })
@@ -170,8 +193,23 @@ project3.addEventListener('mouseover', () => {
 project3.addEventListener('mouseout', () => {
     pItem3.classList.remove('show');
 }, false);
-// dropdownBtn.addEventListener('click', showDropdown);
 
-// function showDropdown(){
-//     // dropdownItem.classList.toggle('show');
-// }
+dropdownBtn.addEventListener('click', (e) => {
+    list1.classList.toggle('hid');
+    list2.classList.toggle('hid');
+    list3.classList.toggle('hid');
+    dropdownItem.getElementsByTagName('DIV')[0].classList.toggle('hid');
+    // console.log(dropdownItem.getElementsByTagName('DIV'));
+});
+
+window.addEventListener('click', (e) => {
+    var w = window.outerWidth;
+    if(w <= 650) {
+        if (e.target !== dropdownBtn) {
+            list1.classList.add('hid');
+            list2.classList.add('hid');
+            list3.classList.add('hid');
+                dropdownItem.getElementsByTagName('DIV')[0].classList.add('hid');
+            }
+    }
+})
