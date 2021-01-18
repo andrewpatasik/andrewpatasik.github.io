@@ -132,61 +132,61 @@ window.addEventListener('resize', () => {
 
 
 // if scroll, focus
-let isScrolling;
-window.addEventListener('scroll', (e) => {
-    // focus navbar when scrolling
-    navbar.classList.add('focus');
-    // clear timeout event
-    window.clearTimeout(isScrolling);
-    //timeout event to blur navbar if not scrolling
-    isScrolling = setTimeout(() => {
-        navbar.classList.remove('focus');
-    }, 1000);
-})
+// let isScrolling;
+// window.addEventListener('scroll', (e) => {
+//     // focus navbar when scrolling
+//     navbar.classList.add('focus');
+//     // clear timeout event
+//     window.clearTimeout(isScrolling);
+//     //timeout event to blur navbar if not scrolling
+//     isScrolling = setTimeout(() => {
+//         navbar.classList.remove('focus');
+//     }, 1000);
+// })
 
 phoneScreen();
 
-// frame1.addEventListener('mouseover', () => {
-//     frameNav1.classList.add('pop');
-// })
+frame1.addEventListener('mouseover', () => {
+    frameNav1.classList.add('pop');
+})
 
-// frameNav1.addEventListener('mouseover', () => {
-//     frameNav1.classList.add('pop');
-// })
+frameNav1.addEventListener('mouseover', () => {
+    frameNav1.classList.add('pop');
+})
 
-// frameNav1.addEventListener('mouseout', () => {
-// frameNav1.classList.remove('pop');
+frameNav1.addEventListener('mouseout', () => {
+frameNav1.classList.remove('pop');
 
-// })
+})
 
-// frame2.addEventListener('mouseover', () => {
-//     frameNav2.classList.add('pop');
-// })
+frame2.addEventListener('mouseover', () => {
+    frameNav2.classList.add('pop');
+})
 
-// frameNav2.addEventListener('mouseover', () => {
-//     frameNav2.classList.add('pop');
-// })
+frameNav2.addEventListener('mouseover', () => {
+    frameNav2.classList.add('pop');
+})
 
-// frameNav2.addEventListener('mouseout', () => {
-// frameNav2.classList.remove('pop');
+frameNav2.addEventListener('mouseout', () => {
+frameNav2.classList.remove('pop');
 
-// })
+})
 
-// frame3.addEventListener('mouseover', () => {
-//     frameNav3.classList.add('pop');
-// })
+frame3.addEventListener('mouseover', () => {
+    frameNav3.classList.add('pop');
+})
 
-// frameNav3.addEventListener('mouseover', () => {
-//     frameNav3.classList.add('pop');
-// })
+frameNav3.addEventListener('mouseover', () => {
+    frameNav3.classList.add('pop');
+})
 
-// frameNav3.addEventListener('mouseout', () => {
-// frameNav3.classList.remove('pop');
+frameNav3.addEventListener('mouseout', () => {
+frameNav3.classList.remove('pop');
 
-// })
+})
 
-dropdownBtn.addEventListener('click', showDropdown);
+// dropdownBtn.addEventListener('click', showDropdown);
 
-function showDropdown(){
-    // dropdownItem.classList.toggle('show');
-}
+// function showDropdown(){
+//     // dropdownItem.classList.toggle('show');
+// }

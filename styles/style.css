@@ -144,12 +144,13 @@ button {
 }
 
 .card-button {
-    width: 80px;
-    height: 40px;
+    width: 70px;
+    height: 30px;
     border-style: none;
     background-color: var(--button-color);
     color: var(--paragraph-color);
     outline: none;
+    font-size: 12px;
 }
 
 .project h2 {
@@ -157,13 +158,15 @@ button {
 }
 
 .project h3 {
-    font-size: 32px;
+    font-size: 23px;
+    margin-bottom: 5px;
 }
 
 .project p {
-    font-size: 14px;
-    font-weight: 400;
+    font-size: 13px;
+    font-weight: 300;
     font-style: italic;
+    margin-bottom: 10px;
 }
 
 #frame-1,
@@ -192,8 +195,7 @@ button {
     display: none;
     width: 100%;
     height: 100%;
-    top: 0;
-    padding-top: 110px;
+    top: 20%;
     text-align: center;
     /* opacity: 60%; */
 }
@@ -202,10 +204,10 @@ button {
     position: absolute;
     width: 100%;
     height: 100%;
-    top: 0;
+    top: -39px;
     background-color: var(--paragraph2-color);
+    border-radius: 10px;
     opacity: 60%;
-    filter: blur(3px);
     z-index: -99;
     transition: opacity 0.3s ease-in;
 }
