@@ -132,6 +132,8 @@ span>a {
     color: var(--paragraph2-color);
     text-align: center;
     font-family: 'Roboto', sans-serif;
+    line-height: 1em;
+    letter-spacing: 3px;
 }
 
 .project h3,
@@ -254,6 +256,10 @@ button {
         grid-template-rows: 1fr;
     }
 
+    .header .container {
+        max-width: 800px;
+    }
+
     .header .container h1 {
         font-size: 40px;
         font-weight: 400;
@@ -262,6 +268,10 @@ button {
 }
 
 @media(max-width:650px) {
+    .header .container {
+        max-width: 400px;
+    }
+
     #dropdown-btn{
         color: white;
         display: block;
@@ -305,6 +315,11 @@ button {
 @media(max-width:500px) {
     .container {
         padding: 10px;
+    }
+
+
+    .header .container {
+        max-width: 100%;
     }
 
     .gradient-bg {

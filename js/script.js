@@ -71,28 +71,33 @@ let pItem2 = document.getElementById('p-item-2');
 let pItem3 = document.getElementById('p-item-3');
 let dropdownBtn = document.getElementById('dropdown-btn');
 let dropdownItem = document.getElementById('dropdown-item');
-let screenWidth = screen.width;
+let screenWidth = window.outerWidth;
 
 function phoneScreen() {
-    let ic1 = document.createElement('i');
-    ic1.classList.add('fa');
-    ic1.classList.add('fa-pencil-square-o');
-    ic1.setAttribute('aria-hidden', 'true');
-    let ic2 = document.createElement('i');
-    ic2.classList.add('fas');
-    ic2.classList.add('fa-code');
-    let ic3 = document.createElement('i');
-    ic3.classList.add('far');
-    ic3.classList.add('fa-id-badge');
+    // let ic1 = document.createElement('i');
+    // ic1.classList.add('fa');
+    // ic1.classList.add('fa-pencil-square-o');
+    // ic1.setAttribute('aria-hidden', 'true');
+    // let ic2 = document.createElement('i');
+    // ic2.classList.add('fas');
+    // ic2.classList.add('fa-code');
+    // let ic3 = document.createElement('i');
+    // ic3.classList.add('far');
+    // ic3.classList.add('fa-id-badge');
 
-    if (screenWidth <= 900) {
-        list1.innerHTML = '';
-        list2.innerHTML = '';
-        list3.innerHTML = '';
+    if (screenWidth <= 650) {
+        // list1.innerHTML = '';
+        // list2.innerHTML = '';
+        // list3.innerHTML = '';
 
-        list1.appendChild(ic1);
-        list2.appendChild(ic2);
-        list3.appendChild(ic3);
+        // list1.appendChild(ic1);
+        // list2.appendChild(ic2);
+        // list3.appendChild(ic3);
+
+        list2.classList.add('hid');
+        list1.classList.add('hid');
+        list3.classList.add('hid');
+        dropdownItem.getElementsByTagName('DIV')[0].classList.add('hid');
     }
     console.log(screenWidth);
 }
@@ -110,7 +115,7 @@ window.addEventListener('resize', () => {
     ic3.classList.add('far');
     ic3.classList.add('fa-id-badge');
 
-    if (w <= 900 && w >= 650) {
+    if (w > 650) {
         list1.innerHTML = '';
         list2.innerHTML = '';
         list3.innerHTML = '';
