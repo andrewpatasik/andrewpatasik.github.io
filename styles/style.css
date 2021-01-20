@@ -109,7 +109,8 @@ span>a {
 
 .header .container h1 {
     font-size: 64px;
-    font-weight: 700;
+    font-weight: 400;
+    margin: 1rem 0;
 }
 
 .header .container p {
@@ -117,6 +118,7 @@ span>a {
     font-weight: 300;
     letter-spacing: 0.02em;
     line-height: 1.5em;
+    text-align: justify;
 }
 
 
@@ -230,7 +232,7 @@ button {
 .footer-content {
     width: 100%;
     margin: 0;
-    padding: 30px;
+    padding: 25px;
     /* text-align: end; */
     /* background-color: #16161a; */
     font-family: 'Roboto', sans-serif;
@@ -238,6 +240,10 @@ button {
     font-weight: 300;
     color: var(--paragraph-color);
     letter-spacing: 0.3em;
+}
+
+.footer-content p {
+    font-size: 11px;
 }
 
 .show{
