@@ -62,6 +62,7 @@ window.onload = function () {
 let list1 = document.getElementById('li_blog');
 let list2 = document.getElementById('li_project');
 let list3 = document.getElementById('li_cv');
+let navigation = document.querySelector('.navigation');
 let navbar = document.getElementById('navbar');
 let project1 = document.getElementById('project-1');
 let project2 = document.getElementById('project-2');
@@ -99,7 +100,7 @@ function phoneScreen() {
         list3.classList.add('hid');
         dropdownItem.getElementsByTagName('DIV')[0].classList.add('hid');
     }
-    console.log(screenWidth);
+    // console.log(screenWidth);
 }
 
 window.addEventListener('resize', () => {
@@ -136,19 +137,19 @@ window.addEventListener('resize', () => {
         dropdownItem.getElementsByTagName('DIV')[0].classList.add('hid');
 
         list1.removeChild(list1.childNodes[0]);
-        list1.textContent = 'home';
+        list1.textContent = 'HOME';
         list2.removeChild(list2.childNodes[0])
-        list2.textContent = 'projects';
+        list2.textContent = 'PROJECTS';
         list3.removeChild(list3.childNodes[0])
-        list3.textContent = 'curriculum vitae';
+        list3.textContent = 'CV';
     } 
     if (w > 900) {
         list1.removeChild(list1.childNodes[0]);
-        list1.textContent = 'home';
+        list1.textContent = 'HOME';
         list2.removeChild(list2.childNodes[0])
-        list2.textContent = 'projects';
+        list2.textContent = 'PROJECTS';
         list3.removeChild(list3.childNodes[0])
-        list3.textContent = 'curriculum vitae';
+        list3.textContent = 'CV';
 
         list2.classList.remove('hid');
         list1.classList.remove('hid');
@@ -216,5 +217,16 @@ window.addEventListener('click', (e) => {
             list3.classList.add('hid');
                 dropdownItem.getElementsByTagName('DIV')[0].classList.add('hid');
             }
+    }
+})
+
+window.addEventListener('scroll', () => {
+    if (window.scrollY == 0) {
+        navigation.classList.remove('grey');
+        navigation.classList.add('gradient-bg');
+        console.log('top');
+    } else {
+        navigation.classList.remove('gradient-bg');
+        navigation.classList.add('grey');
     }
 })
