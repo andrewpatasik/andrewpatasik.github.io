@@ -1,0 +1,11 @@
+/* Main */
+.main .container {
+    padding-top: 150px;
+    width: 100%;
+    height: 700px;
+}
+
+.main h1 {
+    text-align: center;
+    color: var(--paragraph2-color);
+}
