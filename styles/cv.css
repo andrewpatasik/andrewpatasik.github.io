@@ -1,6 +1,7 @@
-/* .navigation {
-    visibility: hidden;
-} */
+.navigation .container h4 {
+    /* visibility: hidden; */
+    color: var(--paragraph-color);
+}
 
 /* Main */
 .main {
@@ -56,8 +57,22 @@ p {
     font-family: 'Raleway', sans-serif;
 }
 
+#skills .grid-right .container .section-header h4 {
+    font-weight: 400;
+}
+
+
+#education .grid-right .container .section-header .location {
+    font-weight: 500;
+}
+
+.grid-left h1 {
+    font-size: 30px;
+}
+
 .section-header > p {
     font-family: 'Roboto', sans-serif;
+    font-weight: 300;
 }
 
 .description {
@@ -97,5 +112,15 @@ p {
 }
 
 @media(max-width: 650px) {
+    .main .flex {
+        flex-direction: column;
+    }
+    .main .grid {
+        gap: 60px;
+    }
 
+    .period,
+    .location {
+        font-weight: 400;
+    }
 }

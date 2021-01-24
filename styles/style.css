@@ -208,7 +208,7 @@ button {
     height: 100%;
     border-radius: 10px;
     background-color: #5f6c7b;
-    opacity: 30%;
+    opacity: 70%;
     z-index: -99;
 }
 
@@ -404,6 +404,10 @@ button {
     .grid-col-3 {
         grid-template-columns: auto;
         grid-template-rows: auto;
+    }
+
+    .p-item-container h3 {
+        font-size: 18px;
     }
 
     .footer .container {
