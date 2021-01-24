@@ -1,11 +1,101 @@
+/* .navigation {
+    visibility: hidden;
+} */
+
 /* Main */
-.main .container {
-    padding-top: 150px;
+.main {
+    margin: 150px 0;
+    padding: 20px;
     width: 100%;
-    height: 700px;
 }
 
-.main h1 {
-    text-align: center;
+/* Reset all */
+.main > * {
+    justify-content: unset;
+    align-items: flex-start;
+}
+
+.main .container {
+    width: 100%;
+    padding: 20px;
+    border-bottom: 1px solid #bcbfc2;
+}
+
+.main .grid {
+    gap: 20px;
+}
+
+.grid-left,
+.grid-right {
+    /* border: 1px solid black; */
+    padding: 10px;
+}
+
+.left,
+.right {
+    /* border: 1px solid black; */
+}
+
+.section-title {
     color: var(--paragraph2-color);
+}
+
+.grid-right .section-header {
+    justify-content: space-between;
+    /* border: 1px solid black; */
+}
+
+
+.section-header > 
+h1, 
+h2, 
+h3, 
+h4, 
+p {
+    color: var(--paragraph2-color);
+    font-family: 'Raleway', sans-serif;
+}
+
+.section-header > p {
+    font-family: 'Roboto', sans-serif;
+}
+
+.description {
+    /* border: 1px solid black; */
+    margin-top: 20px;
+    text-align: justify;
+    line-height: 1.4em;
+}
+
+/* Skills */
+
+.grid-right .container {
+    padding: 0;
+    margin-bottom: 80px;
+    border-bottom: none;
+}
+
+
+/* Education */
+
+#education {
+    border-bottom: none;
+}
+
+/* Utilities */
+.grid-col-2 {
+    grid-template-columns: repeat(2, 39%);
+}
+
+
+/* Tablest and Under */
+@media(max-width:1200px) {
+    .grid-col-2 {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+}
+
+@media(max-width: 650px) {
+
 }

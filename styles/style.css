@@ -54,6 +54,7 @@ span>a {
 .navigation {
     position: fixed;
     z-index: 99;
+    top: 0;
 }
 .navigation .container {
     justify-content: space-between;
@@ -244,6 +245,7 @@ button {
     border-top: 1px solid #bcbfc2;
     margin: 0;
     padding: 25px;
+    padding-bottom: 60px;
     /* text-align: end; */
     /* background-color: #16161a; */
     font-family: 'Raleway', sans-serif;
