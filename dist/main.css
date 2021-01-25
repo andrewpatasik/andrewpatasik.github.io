@@ -1,6 +1,112 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&display=swap);
+/* Utilities */
+.container {
+    max-width: 1880px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.grid{
+    display: grid;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-col-3{
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.gradient-bg {
+    /* background-image: url('../images/sandwitch-home.jpeg'); */
+
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    -webkit-animation: gradient 15s ease infinite;
+    animation: gradient 15s ease infinite;
+    margin: 0 auto;
+
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
+    position: absolute;
+    width: 100%;
+    height: 59px;
+    transition: 0.5s ease;
+}
+
+.grey {
+    background-color: #90b4ce;
+    width: 100%;
+    height: 59px;
+    transition: 0.4s ease;
+}
+
+.border{
+    border: 1px var(--paragraph2-color);
+}
+
+.op {
+    opacity: 50%;
+}
+
+.center-item {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+/* The typewriter cursor effect */
+/* 
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #ffffee; }
+} 
+*/
+
+@-webkit-keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.focus {
+    opacity: 100%;
+    transition-property: fill, fill-opacity, stroke, stroke-opacity, stroke-width;
+    -webkit-transition: opacity 0.5s ease-in;
+    -webkit-transition-property: fill, fill-opacity, stroke, stroke-opacity, stroke-width;
+    ;
+    transition: opacity 0.5s ease-in;
+}
+
 /* fonts */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&display=swap');
 
 * {
     box-sizing: border-box;
@@ -422,4 +528,131 @@ button {
         text-align: center;
     }
 
+}
+
+.navigation .container h4 {
+    /* visibility: hidden; */
+    color: var(--paragraph-color);
+}
+
+/* Main */
+.main {
+    margin: 150px 0;
+    padding: 20px;
+    width: 100%;
+}
+
+/* Reset all */
+.main > * {
+    justify-content: unset;
+    align-items: flex-start;
+}
+
+.main .container {
+    width: 100%;
+    padding: 20px;
+    border-bottom: 1px solid #bcbfc2;
+}
+
+.main .grid {
+    gap: 20px;
+}
+
+.grid-left,
+.grid-right {
+    /* border: 1px solid black; */
+    padding: 10px;
+}
+
+.left,
+.right {
+    /* border: 1px solid black; */
+}
+
+.section-title {
+    color: var(--paragraph2-color);
+}
+
+.grid-right .section-header {
+    justify-content: space-between;
+    /* border: 1px solid black; */
+}
+
+
+.section-header > 
+h1, 
+h2, 
+h3, 
+h4, 
+p {
+    color: var(--paragraph2-color);
+    font-family: 'Raleway', sans-serif;
+}
+
+#skills .grid-right .container .section-header h4 {
+    font-weight: 400;
+}
+
+
+#education .grid-right .container .section-header .location {
+    font-weight: 500;
+}
+
+.grid-left h1 {
+    font-size: 30px;
+}
+
+.section-header > p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+.description {
+    /* border: 1px solid black; */
+    margin-top: 20px;
+    text-align: justify;
+    line-height: 1.4em;
+}
+
+/* Skills */
+
+.grid-right .container {
+    padding: 0;
+    margin-bottom: 80px;
+    border-bottom: none;
+}
+
+
+/* Education */
+
+#education {
+    border-bottom: none;
+}
+
+/* Utilities */
+.grid-col-2 {
+    grid-template-columns: repeat(2, 39%);
+}
+
+
+/* Tablest and Under */
+@media(max-width:1200px) {
+    .grid-col-2 {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+}
+
+@media(max-width: 650px) {
+    .main .flex {
+        flex-direction: column;
+    }
+    .main .grid {
+        gap: 60px;
+    }
+
+    .period,
+    .location {
+        font-weight: 400;
+    }
 }
