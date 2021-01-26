@@ -1,5 +1,10 @@
 import typing from "./typing";
 
+// CSS
+import '../styles/utilities.css';
+import '../styles/style.css';
+import '../styles/cv.css';
+
 typing();
 
 let list1 = document.getElementById('li_blog');

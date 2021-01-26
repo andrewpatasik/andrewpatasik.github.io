@@ -10,13 +10,43 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/styles/cv.css":
+/*!***************************!*\
+  !*** ./src/styles/cv.css ***!
+  \***************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://andrewpatasik.github.io/./src/styles/cv.css?");
+
+/***/ }),
+
+/***/ "./src/styles/style.css":
+/*!******************************!*\
+  !*** ./src/styles/style.css ***!
+  \******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://andrewpatasik.github.io/./src/styles/style.css?");
+
+/***/ }),
+
+/***/ "./src/styles/utilities.css":
+/*!**********************************!*\
+  !*** ./src/styles/utilities.css ***!
+  \**********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://andrewpatasik.github.io/./src/styles/utilities.css?");
+
+/***/ }),
+
 /***/ "./src/js/cv.js":
 /*!**********************!*\
   !*** ./src/js/cv.js ***!
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _typing__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./typing */ \"./src/js/typing.js\");\n\n\n(0,_typing__WEBPACK_IMPORTED_MODULE_0__.default)();\n\nlet list1 = document.getElementById('li_blog');\nlet list2 = document.getElementById('li_project');\nlet list3 = document.getElementById('li_cv');\nlet navigation = document.querySelector('.navigation');\nlet dropdownBtn = document.getElementById('dropdown-btn');\nlet dropdownItem = document.getElementById('dropdown-item');\nlet screenWidth = window.outerWidth;\n\nfunction phoneScreen() {\n    // let ic1 = document.createElement('i');\n    // ic1.classList.add('fa');\n    // ic1.classList.add('fa-pencil-square-o');\n    // ic1.setAttribute('aria-hidden', 'true');\n    // let ic2 = document.createElement('i');\n    // ic2.classList.add('fas');\n    // ic2.classList.add('fa-code');\n    // let ic3 = document.createElement('i');\n    // ic3.classList.add('far');\n    // ic3.classList.add('fa-id-badge');\n\n    if (screenWidth <= 650) {\n        // list1.innerHTML = '';\n        // list2.innerHTML = '';\n        // list3.innerHTML = '';\n\n        // list1.appendChild(ic1);\n        // list2.appendChild(ic2);\n        // list3.appendChild(ic3);\n\n        list2.classList.add('hid');\n        list1.classList.add('hid');\n        list3.classList.add('hid');\n        dropdownItem.getElementsByTagName('DIV')[0].classList.add('hid');\n    }\n    // console.log(screenWidth);\n}\n\nwindow.addEventListener('resize', () => {\n    var w = window.innerWidth;\n\n    if (w <= 720) {\n        list2.classList.add('hid');\n        list1.classList.add('hid');\n        list3.classList.add('hid');\n        dropdownItem.getElementsByTagName('DIV')[0].classList.add('hid');\n    } else if (w > 720){\n        list2.classList.remove('hid');\n        list1.classList.remove('hid');\n        list3.classList.remove('hid');\n        dropdownItem.getElementsByTagName('DIV')[0].classList.remove('hid');\n    }\n\n})\n\nphoneScreen();\n\ndropdownBtn.addEventListener('click', (e) => {\n    list1.classList.toggle('hid');\n    list2.classList.toggle('hid');\n    list3.classList.toggle('hid');\n    dropdownItem.getElementsByTagName('DIV')[0].classList.toggle('hid');\n    // console.log(dropdownItem.getElementsByTagName('DIV'));\n});\n\nwindow.addEventListener('click', (e) => {\n    var w = window.outerWidth;\n    if(w <= 650) {\n        if (e.target !== dropdownBtn) {\n            list1.classList.add('hid');\n            list2.classList.add('hid');\n            list3.classList.add('hid');\n                dropdownItem.getElementsByTagName('DIV')[0].classList.add('hid');\n            }\n    }\n})\n\nwindow.addEventListener('scroll', () => {\n    if (window.scrollY == 0) {\n        navigation.classList.remove('grey');\n        navigation.classList.add('gradient-bg');\n        console.log('top');\n    } else {\n        navigation.classList.remove('gradient-bg');\n        navigation.classList.add('grey');\n    }\n})\n\n//# sourceURL=webpack://andrewpatasik.github.io/./src/js/cv.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _typing__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./typing */ \"./src/js/typing.js\");\n/* harmony import */ var _styles_utilities_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../styles/utilities.css */ \"./src/styles/utilities.css\");\n/* harmony import */ var _styles_style_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../styles/style.css */ \"./src/styles/style.css\");\n/* harmony import */ var _styles_cv_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../styles/cv.css */ \"./src/styles/cv.css\");\n\n\n// CSS\n\n\n\n\n(0,_typing__WEBPACK_IMPORTED_MODULE_0__.default)();\n\nlet list1 = document.getElementById('li_blog');\nlet list2 = document.getElementById('li_project');\nlet list3 = document.getElementById('li_cv');\nlet navigation = document.querySelector('.navigation');\nlet dropdownBtn = document.getElementById('dropdown-btn');\nlet dropdownItem = document.getElementById('dropdown-item');\nlet screenWidth = window.outerWidth;\n\nfunction phoneScreen() {\n    // let ic1 = document.createElement('i');\n    // ic1.classList.add('fa');\n    // ic1.classList.add('fa-pencil-square-o');\n    // ic1.setAttribute('aria-hidden', 'true');\n    // let ic2 = document.createElement('i');\n    // ic2.classList.add('fas');\n    // ic2.classList.add('fa-code');\n    // let ic3 = document.createElement('i');\n    // ic3.classList.add('far');\n    // ic3.classList.add('fa-id-badge');\n\n    if (screenWidth <= 650) {\n        // list1.innerHTML = '';\n        // list2.innerHTML = '';\n        // list3.innerHTML = '';\n\n        // list1.appendChild(ic1);\n        // list2.appendChild(ic2);\n        // list3.appendChild(ic3);\n\n        list2.classList.add('hid');\n        list1.classList.add('hid');\n        list3.classList.add('hid');\n        dropdownItem.getElementsByTagName('DIV')[0].classList.add('hid');\n    }\n    // console.log(screenWidth);\n}\n\nwindow.addEventListener('resize', () => {\n    var w = window.innerWidth;\n\n    if (w <= 720) {\n        list2.classList.add('hid');\n        list1.classList.add('hid');\n        list3.classList.add('hid');\n        dropdownItem.getElementsByTagName('DIV')[0].classList.add('hid');\n    } else if (w > 720){\n        list2.classList.remove('hid');\n        list1.classList.remove('hid');\n        list3.classList.remove('hid');\n        dropdownItem.getElementsByTagName('DIV')[0].classList.remove('hid');\n    }\n\n})\n\nphoneScreen();\n\ndropdownBtn.addEventListener('click', (e) => {\n    list1.classList.toggle('hid');\n    list2.classList.toggle('hid');\n    list3.classList.toggle('hid');\n    dropdownItem.getElementsByTagName('DIV')[0].classList.toggle('hid');\n    // console.log(dropdownItem.getElementsByTagName('DIV'));\n});\n\nwindow.addEventListener('click', (e) => {\n    var w = window.outerWidth;\n    if(w <= 650) {\n        if (e.target !== dropdownBtn) {\n            list1.classList.add('hid');\n            list2.classList.add('hid');\n            list3.classList.add('hid');\n                dropdownItem.getElementsByTagName('DIV')[0].classList.add('hid');\n            }\n    }\n})\n\nwindow.addEventListener('scroll', () => {\n    if (window.scrollY == 0) {\n        navigation.classList.remove('grey');\n        navigation.classList.add('gradient-bg');\n        console.log('top');\n    } else {\n        navigation.classList.remove('gradient-bg');\n        navigation.classList.add('grey');\n    }\n})\n\n//# sourceURL=webpack://andrewpatasik.github.io/./src/js/cv.js?");
 
 /***/ }),
 
