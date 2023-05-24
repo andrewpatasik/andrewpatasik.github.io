@@ -9,25 +9,20 @@ const Footer = () => {
           </a>
           . All Rights Reserved.
         </span>
-        <ul className="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 sm:mt-0">
+        <ul className="flex flex-wrap items-center space-x-4 md:space-x-6 mt-3 text-sm font-medium text-gray-500 sm:mt-0">
           <li>
-            <a href="#" className="mr-4 hover:underline md:mr-6 ">
-              About
-            </a>
-          </li>
-          <li>
-            <a href="#" className="mr-4 hover:underline md:mr-6">
-              Privacy Policy
-            </a>
-          </li>
-          <li>
-            <a href="#" className="mr-4 hover:underline md:mr-6">
-              Licensing
+            <a href="#" className="hover:underline">
+              LinkedIn
             </a>
           </li>
           <li>
             <a href="#" className="hover:underline">
-              Contact
+              Twitter
+            </a>
+          </li>
+          <li>
+            <a href="#" className="hover:underline">
+              Github
             </a>
           </li>
         </ul>
