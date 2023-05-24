@@ -9,7 +9,12 @@ const ContentLayout: FC<ContentLayoutProps> = ({
   children,
   className,
 }: ContentLayoutProps) => {
-  return <div className={`grid grid-cols-5 ${className}`}>{children}</div>;
+  return (
+    <div className={`grid grid-cols-5 ${className}`}>
+      <div></div>
+      {children}
+    </div>
+  );
 };
 
 export default ContentLayout;
