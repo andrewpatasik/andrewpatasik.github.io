@@ -1,6 +1,7 @@
 import ContentLayout from "./Layout/contentLayout";
 import About from "./section/about";
 import Experience from "./section/experience";
+import Project from "./section/project";
 
 const Home = () => {
   return (
@@ -10,6 +11,9 @@ const Home = () => {
       </ContentLayout>
       <ContentLayout className="my-12">
         <Experience />
+      </ContentLayout>
+      <ContentLayout className="my-12">
+        <Project />
       </ContentLayout>
     </div>
   );
