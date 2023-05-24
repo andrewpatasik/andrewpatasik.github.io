@@ -43,7 +43,7 @@ export const Navbar = () => {
                 aria-current="page"
               >
                 <p className="flex items-center">
-                  Contact
+                  Projects
                   <ArrowLongRightIcon className="ml-1 w-4 h-4" />
                 </p>
               </a>
@@ -54,7 +54,7 @@ export const Navbar = () => {
                 className="block py-2 pl-3 pr-4 text-blue-500 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-400 md:p-0"
               >
                 <p className="flex items-center">
-                  About
+                  Contact
                   <ArrowLongRightIcon className="ml-1 w-4 h-4" />
                 </p>
               </a>

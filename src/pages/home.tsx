@@ -1,5 +1,6 @@
 import ContentLayout from "./Layout/contentLayout";
 import About from "./section/about";
+import Contact from "./section/contact";
 import Experience from "./section/experience";
 import Project from "./section/project";
 
@@ -15,6 +16,7 @@ const Home = () => {
       <ContentLayout className="my-12">
         <Project />
       </ContentLayout>
+      <Contact />
     </div>
   );
 };
