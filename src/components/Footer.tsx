@@ -7,7 +7,7 @@ const Footer = () => {
           <a href="#" className="hover:underline">
             Andrew Patasik
           </a>
-          . All Rights Reserved.
+          . Pinrang, 🇮🇩
         </span>
         <ul className="flex flex-wrap items-center space-x-4 md:space-x-6 mt-3 text-sm font-medium text-gray-500 sm:mt-0">
           <li>
