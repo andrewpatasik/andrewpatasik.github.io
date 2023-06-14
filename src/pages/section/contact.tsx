@@ -10,7 +10,7 @@ const Contact = () => {
         Have interesting project? can my skillset help you? don't hesitate to contact me.
       </p>
       <div className="w-full items-center justify-center space-y-4 sm:flex sm:space-y-0 sm:space-x-4">
-        <Textarea />
+        {/* <Textarea /> */}
       </div>
     </div>
   );
