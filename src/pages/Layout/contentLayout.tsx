@@ -10,8 +10,8 @@ const ContentLayout: FC<ContentLayoutProps> = ({
   className,
 }: ContentLayoutProps) => {
   return (
-    <div className={`grid grid-cols-5 ${className}`}>
-      <div></div>
+    <div className={`grid grid-cols-5 gap-4 sm:gap-0 ${className}`}>
+      <div className="hidden md:block"></div>
       {children}
     </div>
   );

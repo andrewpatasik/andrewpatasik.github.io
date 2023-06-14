@@ -1,15 +1,16 @@
+
 const About = () => {
   return (
     <>
-      <div className="col-span-4">
+      <div className="col-span-5 lg:col-span-4">
         <h1
           style={{ fontFamily: "heebo, sans-serif" }}
-          className="text-7xl text-gray-800 font-semibold tracking-tighter mb-2"
+          className="text-5xl text-gray-800 font-semibold tracking-tighter mb-2 sm:max-md:text-6xl md:text-7xl lg:mb-4"
         >
           Digital Product Designer
         </h1>
       </div>
-      <aside className="text-xs pt-0.5 mr-4 text-gray-500 text-justify font-bold leading-relaxed">
+      <aside className="text-xs pt-0.5 mr-4 text-gray-500 text-justify font-bold leading-relaxed col-span-5 lg:col-auto">
         <p>
           TL;DR: I'm Andrew, a Software Engineer graduate with 8 months of
           front-end experience.
@@ -18,7 +19,7 @@ const About = () => {
           framework. Let's work together!
         </p>
       </aside>
-      <article className="col-span-4 grid grid-cols-3 gap-4">
+      <article className="col-span-5 lg:col-span-4 grid grid-cols-1 lg:grid-cols-3 gap-4">
         <p>
           Hello there 👋, I'm Andrew, a Software Engineer with experience in
           various disciplines. I've spent the last eight months working as a

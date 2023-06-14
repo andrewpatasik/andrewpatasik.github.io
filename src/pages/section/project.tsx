@@ -19,7 +19,7 @@ const Project = () => {
           ultrices enim vitae, rhoncus velit. Fusce sit amet bibendum ex.
         </p>
       </aside>
-      <article className="col-span-4 grid grid-cols-3 gap-4">
+      <article className="col-span-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
         {projectData.map((item, index) => (
           <Card key={index} item={item} />
         ))}
