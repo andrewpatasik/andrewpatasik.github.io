@@ -9,7 +9,7 @@ const Experience = lazy(() => import("./section/experience"));
 const Home = () => {
   return (
     <div className="text-gray-700">
-      <ContentLayout className="mt-32 mb-12">
+      <ContentLayout className="mt-24 lg:mt-32 mb-12">
         <About />
       </ContentLayout>
       <ContentLayout className="my-24">
@@ -17,9 +17,9 @@ const Home = () => {
           <Experience />
         </Suspense>
       </ContentLayout>
-      {/* <ContentLayout className="my-12">
+      <ContentLayout className="my-12">
         <Project />
-      </ContentLayout> */}
+      </ContentLayout>
       <Contact />
     </div>
   );

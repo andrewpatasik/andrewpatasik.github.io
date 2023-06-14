@@ -15,7 +15,7 @@ const Card = ({ item }: CardProps) => {
         /> */}
         <LazyLoadImage
           alt={item.name}
-          className="w-full h-[160px] object-cover"
+          className="w-full lg:h-[160px] object-cover"
           effect="opacity"
           src={item.img}
         />
