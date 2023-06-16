@@ -12,10 +12,8 @@ const About = () => {
       </div>
       <aside className="text-xs pt-0.5 mr-4 text-gray-500 text-justify font-bold leading-relaxed col-span-5 lg:col-auto">
         <p>
-          TL;DR: I'm Andrew, a Software Engineer graduate with 8 months of
-          front-end experience.
-          <br />
-          I've had helped business to build their projects using React
+          TL;DR: I'm Andrew, I'm Software Engineer graduate previously working as frontend developer.
+          I've helped business to build their web and mobile projects using React
           framework. Let's work together!
         </p>
       </aside>
@@ -23,7 +21,7 @@ const About = () => {
         <p>
           Hello there 👋, I'm Andrew, a Software Engineer with experience in
           various disciplines. I've spent the last eight months working as a
-          front-end developer, and I've really enjoyed it. I feel comfortable
+          frontend developer, and I've really enjoyed it. I feel comfortable
           working with the React framework, which is my go-to for creating
           awesome web interfaces. I'm familiar working with web dev technology
           such as; React, Next.js, Typescript, Redux, Node.js, Express, and
