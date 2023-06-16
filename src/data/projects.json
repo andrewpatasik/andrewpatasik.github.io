@@ -1,24 +1,24 @@
 [
   {
-    "img": "/noken-thumbnail.png",
+    "img": "noken-thumbnail.png",
     "name": "Noken Crypto Wallet",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut a lobortis orci, a volutpat erat. Nulla facilisi. Donec nec lectus pharetra, ultrices enim vitae, rhoncus velit.",
     "link": "#"
   },
   {
-    "img": "/altecoin-thumbnail.png",
-    "name": "Altecoin MN Staking Web Platform",
+    "img": "",
+    "name": "Altecoin Staking Web Platform",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut a lobortis orci, a volutpat erat. Nulla facilisi. Donec nec lectus pharetra, ultrices enim vitae, rhoncus velit.",
     "link": "#"
   },
   {
-    "img": "/mandikeswap-thumbnail.png",
+    "img": "",
     "name": "Mandike Swap Bridge",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut a lobortis orci, a volutpat erat. Nulla facilisi. Donec nec lectus pharetra, ultrices enim vitae, rhoncus velit.",
     "link": "#"
   },
   {
-    "img": "/collateralreward-thumbnail.png",
+    "img": "",
     "name": "Collateral Reward Generator",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut a lobortis orci, a volutpat erat. Nulla facilisi. Donec nec lectus pharetra, ultrices enim vitae, rhoncus velit.",
     "link": "#"

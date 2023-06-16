@@ -1,7 +1,7 @@
 const Experience = () => {
   return (
     <>
-      <div className="col-span-4">
+      <div className="col-span-5 lg:col-span-4">
         <h1
           style={{ fontFamily: "heebo, sans-serif" }}
           className="text-4xl text-gray-800 font-semibold tracking-normal mb-3"

@@ -1,4 +1,5 @@
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/opacity.css";
 
 interface CardProps {
   item: any;
@@ -6,32 +7,28 @@ interface CardProps {
 
 const Card = ({ item }: CardProps) => {
   return (
-    <div className="lg:max-w-sm bg-white">
-      <a href="#">
-        {/* <img
-          className="w-full h-[160px] object-cover"
-          src={item.img}
-          alt=""
-        /> */}
-        <LazyLoadImage
-          alt={item.name}
-          className="w-full lg:h-[160px] object-cover"
-          effect="opacity"
-          src={item.img}
-        />
-      </a>
-      <div>
-        <a href={item.link}>
-          <h5 className="mt-4 mb-2 text-xl font-bold tracking-tight text-gray-900">
+    <div className="flex flex-col bg-white">
+        {!item.img ? (
+          <div className="h-40 bg-gray-300 text-gray-400 grid">
+            <p className="self-center place-self-center">currently unavailable</p>
+          </div>
+        ) : (
+          <LazyLoadImage
+            src={item.img}
+            className="w-full sm:h-40 sm:object-fit"
+            effect="opacity"
+            threshold={-100}
+          />
+        )}
+      <div className="grow flex flex-col">
+          <h5 className="basis-1/4 mt-4 text-xl font-bold tracking-tight text-gray-900">
             {item.name}
           </h5>
-        </a>
         <p className="mb-3 font-normal text-gray-700">{item.description}</p>
         <a
-          href={item.link}
           className={`${
             item.link === "#" && "disabled:opacity-30 line-through"
-          } inline-flex items-center py-2 text-sm font-medium text-center text-blue-700`}
+          } mt-auto inline-flex items-center py-2 text-sm font-medium text-center text-blue-700`}
         >
           Read more
           <svg
