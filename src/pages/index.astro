@@ -1,0 +1,13 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Footer from "../components/Footer";
+import { Navbar } from "../components/Navbar";
+import Home from "../components/home";
+---
+
+<Layout>
+      <Navbar client:load />
+      <Home />
+      <Footer />
+</Layout>
+

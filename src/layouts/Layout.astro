@@ -1,3 +1,8 @@
+---
+import '../styles/global.css';
+import '@fontsource/inter';
+import '@fontsource/heebo';
+---
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -14,8 +19,7 @@
       content="frontend, web developer, react developer, programmer Makassar, programmer Pinrang, Andrew Patasik"
     />
   </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+	<body class="flex flex-col w-11/12 lg:max-2xl:w-4/5 2xl:w-3/5 mx-auto font-sans">
+  <slot />
   </body>
 </html>

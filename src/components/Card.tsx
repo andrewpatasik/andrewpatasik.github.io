@@ -1,4 +1,5 @@
-import { LazyLoadImage } from "react-lazy-load-image-component";
+import pkg from "react-lazy-load-image-component";
+const { LazyLoadImage } = pkg;
 import "react-lazy-load-image-component/src/effects/opacity.css";
 
 interface CardProps {
